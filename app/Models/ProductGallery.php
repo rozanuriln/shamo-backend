@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class ProductGallery extends Model
 {
     use HasFactory, SoftDeletes;
-
+    protected $table = 'products_galleries';
     
     protected $fillable = [
         'products_id',
